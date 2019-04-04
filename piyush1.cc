@@ -42,8 +42,9 @@ main (int argc, char *argv[])
   devices1 = pointToPoint.Install (nodes.Get(0), nodes.Get(1));
   devices2 = pointToPoint.Install (nodes.Get(1), nodes.Get(2));
 //   devices1     devices2
-// [N]------->[N]-------->[N]
+// [N]--------[N]---------[N]
 //  0          1           2
+// [C]        [S]         [C]
   InternetStackHelper stack; // helps install LAN Card
   stack.Install (nodes);
 
